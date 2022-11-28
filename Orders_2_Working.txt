@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    T56K
+    GK
+[0] A3F           [пролог]
+[1] T60@          [пролог]
+[2] X0S           [step by step]
+[3] T3F           [acc=0]
+[4] A0F           [acc=lineOfFirst]
+[5] T68@          [index=lineOfFirst;acc=0]
+[6] A136F         [acc=first]
+[7] T65@          [bigNum=acc;acc=0]
+[8] A1F           [acc=size]
+[9] S61@          [acc-=1;nextElement1]
+[10] T63@         [count=size;acc=0]
+[11] T3F          [acc=0]
+[12] A68@         [acc=index]
+[13] L0D          [(varindex)]
+[14] A67@         [A(varindex)S]
+[15] T16@         [putfun1]
+[16] A1F          [resultfirst]
+[17] T66@         [numCheck=acc;acc=0]
+[18] A65@         [acc+=bigNum]
+[19] S66@         [acc-=numCheck]
+[20] G23@         [goHere]
+[21] A66@         [acc+=NumCheck]
+[22] T65@         [bigNum=acc;acc=0]
+[23] A68@         [goHere]
+[24] A61@         [index+=1]
+[25] T68@         [varindex=acc;acc=0]
+[26] A63@         [acc=count;acc=0]
+[27] E9@          [nextElement1]
+[28] A65@         [acc=bigNum]
+[29] A61@         [bigNum+=1]
+[30] T2F          [varone=bigNum]
+[31] T3F          [acc=0;restart]
+[32] A0F          [acc=lineOfFirst]
+[33] T68@         [index=lineOfFirst;acc=0]
+[34] A1F          [acc=size]
+[35] S61@         [acc-=1]
+[36] T63@         [count=size;acc=0]
+[37] A2F          [acc+=varone]
+[38] S61@         [acc-=1]
+[39] T2F          [varone+=1;acc=0]
+[40] G60@         [nextElement]
+[41] T3F          [acc=0]
+[42] A68@         [acc=index]
+[43] L0D          [(varindex)]
+[44] A67@         [A(varindex)S]
+[45] T46@         [putfun1]
+[46] A1F          [resultfirst]
+[47] S2F          [substract;acc=0-10]
+[48] E47@         [acc-=varone;acc=-10]
+[49] A2F          [checkacc+=varone;acc=0]
+[50] S61@         [acc-=1;acc=-1]
+[51] E31@         [acc==0;acc=-1]
+[52] T3F          [acc=0]
+[53] A61@         [acc+=1]
+[54] A68@         [acc+=varindex]
+[55] T68@         [varindex=acc;acc=0]
+[56] A63@         [acc=count]
+[57] S61@         [acc+=1]
+[58] U63@         [count=acc;acc=count]
+[59] E40@         [nextElement]
+[60] E0F          [заканчиваетработу]
+[61] P0D          [valone=1]
+[62] P0D
+[63] P0F          [varcount=0]
+[64] P0F          [varanswer=0]
+[65] P0F          [varbigNum=0]
+[66] P0F          [varnumCheck=0]
+[67] A0F          [fun1]
+[68] P0F          [varindex]
+GK
+[0]A11@
+[1]T0F
+[2]A9@
+[3]T1F
+[4] A10@
+[5] T2F
+[6] A6@ [\вызов]
+[7] G56F [/подпрограммы]
+[8] Z0F [остановка]
+[9] P1D     [size ;3]
+[10] P2D     [varone = 1]
+[11] P68F   [listStart]
+[12; array] P5F[first]   [2*3 + 0 = 6]
+[13]       P2D [second]  [2*3 + 1 = 7]
+[14]       P7D [third]   [2*3 + 0 = 8]
+EZPF
+
+
+
+

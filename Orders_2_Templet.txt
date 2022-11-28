@@ -1,0 +1,125 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    T43K
+    GK
+[0] A3F                       [пролог:формированиекодаинструкциивозвратавacc]
+[1] T60@                      [пролог:записьинструкциивозврата]
+[2] X0S
+[3] T0S                       [acc=0]
+[4] A[listStart]S             [acc=lineOfFirst]
+[5] T[varindex]S              [index=lineOfFirst;acc=0]
+[6] A[first]S                 [acc=first]
+[7] T[bigNum]S                [bigNum=acc;acc=0]
+[8] A[size]S                  [acc=size]
+[9] S[valone]S                [acc-=1;nextElement1]
+[10] T[count]S                [count=size;acc=0]
+[11] T0S                      [acc=0]
+[12] A[varindex]S             [acc=index]
+[13] L0L                      [(varindex)]
+[14] A[fun1]S                 [A(varindex)S]
+[15] T[nextline]S             [putfun1]
+[16] A1S                      [resultfirst]
+[17] T[numCheck]S             [numCheck=acc;acc=0]
+[18] A[bigNum]S               [acc+=bigNum]
+[19] S[numCheck]S             [acc-=numCheck]
+[20] G[goHere]S               [goHere]
+[21] A[numCheck]S             [acc+=NumCheck]
+[22] T[BigNum]S               [bigNum=acc;acc=0]
+[23] A[varindex]S             [goHere]
+[24] A[valone]S               [index+=1]
+[25] T[varindex]S             [varindex=acc;acc=0]
+[26] A[count]S                [acc=count;acc=0]
+[27] E[nextElement1]S         [nextElement1]
+[28] A[bigNum]S               [acc=bigNum]
+[29] A[valone]S               [bigNum+=1]
+[30] T[varone]S               [varone=bigNum]
+[31] T0S                      [acc=0;restart]
+[32] A[listStart]S            [acc=lineOfFirst]
+[33] T[varindex]S             [index=lineOfFirst;acc=0]
+[34] A[size]S                 [acc=size]
+[35] S[valone]S               [acc-=1]
+[36] T[count]S                [count=size;acc=0]
+[37] A[varone]S               [acc+=varone]
+[38] S[valone]S               [acc-=1]
+[39] T[varone]S               [varone+=1;acc=0]
+[40] G[Stop]S                 [nextElement]
+[41] T0S                      [acc=0]
+[42] A[varindex]S             [acc=index]
+[43] L0L                      [(varindex)]
+[44] A[fun1]S                 [A(varindex)S]
+[45] T[nextline]S             [putfun1]
+[46] A1S                      [resultfirst]
+[47] S[varone]S               [substract;acc=0-10]
+[48] E[substract]S            [acc-=varone;acc=-10]
+[49] A[varone]S               [checkacc+=varone;acc=0]
+[50] S[valone]S               [acc-=1;acc=-1]
+[51] E[restart]S              [acc==0;acc=-1]
+[52] T0S                      [acc=0]
+[53] A[valone]S               [acc+=1]
+[54] A[varindex]S             [acc+=varindex]
+[55] T[varindex]S             [varindex=acc;acc=0]
+[56] A[count]S                [acc=count]
+[57] S[valone]S               [acc+=1]
+[58] U[count]S                [count=acc;acc=count]
+[59] E[nextElement]S          [nextElement]
+[60][ret]E0F                  [заканчиваетработу]
+[61] P0L                      [valone=1]
+[62] P0L                      [varone=1]
+[63] P0S                      [varcount=0]
+[64] P0S                      [varanswer=0]
+[65] P0S                      [varbigNum=0]
+[66] P0S                      [varnumCheck=0]
+[67] A0S                      [fun1]
+[68] P0S                      [varindex]
+GK
+[0]A8@
+[1]T0F
+[2]A7@
+[3]T1F
+[4] A4@ [\вызов]
+[5] G56F [/подпрограммы]
+[6] Z0F [остановка]
+[7] P1L     [size ;3]
+[8]P50S    [listStart]
+[9; array] P5S [first]   [2*3 + 0 = 6]
+[10]       P2L [second]  [2*3 + 1 = 7]
+[11]        P7L [third]   [2*3 + 0 = 8]
+EZPF

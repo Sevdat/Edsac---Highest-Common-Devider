@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T103S
+X0S
+T0S     [acc = 0]
+A98S    [acc = lineOfFirst]
+T99S    [index = lineOfFirst; acc = 0]
+A100S   [acc = first]
+T94S    [bigNum = acc; acc = 0]
+A97S    [acc = size]
+S90S    [acc -= 1; nextElement1]
+T92S    [count = size; acc = 0]
+T0S     [acc = 0]
+A99S    [acc = index]
+L0L     [(var index)]
+A96S    [A(var index)S]
+T46S    [put fun 1]
+A1S     [result first]
+T95S    [numCheck = acc; acc = 0]
+A94S    [acc += bigNum]
+S95S    [acc -= numCheck]
+G53S    [goHere]
+A95S    [acc += NumCheck]
+T94S    [bigNum = acc; acc = 0]
+A99S    [goHere]
+A90S    [index += 1]
+T99S    [var index = acc; acc = 0]
+A92S    [acc = count; acc = 0]
+E39S    [nextElement1]
+A94S    [acc = bigNum]
+A90S    [bigNum += 1]
+T91S    [var one = bigNum]
+T0S     [acc = 0; restart]
+A98S    [acc = lineOfFirst]
+T99S    [index = lineOfFirst; acc = 0]
+A97S    [acc = size]
+S90S    [acc -= 1]
+T92S    [count = size; acc = 0]
+A91S    [acc += var one]
+S90S    [acc -= 1]
+T91S    [var one += 1; acc = 0]
+G103S   [nextElement]
+T0S     [acc = 0]
+A99S    [acc = index]
+L0L     [(var index)]
+A96S    [A(var index)S]
+T76S    [put fun 1]
+A1S     [result first]
+S91S    [substract; acc =0-10]
+E77S    [acc -= var one; acc = -10]
+A91S    [check acc += var one; acc = 0]
+S90S    [acc -= 1; acc = -1]
+E61S    [acc == 0; acc = -1]
+T0S     [acc = 0]
+A90S    [acc += 1]
+A99S    [acc += var index]
+T99S    [var index = acc; acc = 0]
+A92S    [acc = count]
+S90S    [acc += 1]
+U92S    [count = acc ;acc = count]
+E70S    [nextElement]
+P0L     [val one = 1]
+P0L     [var one = 1]
+P0S     [var count = 0]
+P0S     [var answer = 0]
+P0S     [var bigNum = 0]
+P0S     [var numCheck = 0]
+A0S     [fun 1]
+P1L     [size ;3]
+P50S    [listStart]
+P0S     [var index]
+[array] P5S [first]   [2*3 + 0 = 6]
+        P2L [second]  [2*3 + 1 = 7]
+        P7L [third]   [2*3 + 0 = 8]
+  [End]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
