@@ -1,0 +1,111 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T111S
+X0S
+T0S              [acc = 0]
+A106S    [acc = lineOfFirst]
+T107S    [index = lineOfFirst; acc = 0]
+T0S              [acc = 0; next]
+A100S    [acc = count]
+A98S      [acc += 1]
+S105S         [acc = 1 - 3]
+E67S     [acc == 0]
+T0S
+A107S    [acc = index]
+A100S    [index += count]
+L0L              [(var index)]
+A104S        [A(var index)S]
+T47S    [put fun 1]
+A1S              [result first]
+T103S     [numCheck = acc, acc = 0]
+A100S    [count = 0]
+S98S      [count -= 1]
+E55S         [acc == -1]
+T0S              [acc = 0]
+A103S     [acc = numCheck]
+T102S      [smalNum = acc, acc = 0]
+T0S              [Skip]
+A100S    [count = 0]
+A98S      [count += 1]
+T100S    [count = acc, acc = 0]
+A102S      [acc = smalNum]
+S103S     [acc -= numCheck]
+G65S        [acc = +smalNum]
+T0S              [acc = 0]
+A103S     [acc = numCheck]
+T102S      [smalNum = numCheck]
+T0S              [Skip2]
+E36S         [Next]
+T0S              [-----------mainPart, acc = 0-----------]
+T100S        [count = acc]
+T0S              [acc = 0; nextElement1]
+A100S    [acc = count]
+A98S      [acc += 1]
+S105S         [acc = 1 - 3]
+E111S     [acc == 0]
+T0S
+A107S    [acc = index]
+A100S    [index += count]
+L0L              [(var index)]
+A104S        [A(var index)S]
+T80S    [put fun 1]
+A1S              [result first]
+U103S     [numCheck = acc, acc = 0]
+S102S      [acc -= smalNum, substract]
+G88S     [acc == -]
+S98S      [acc -= 1]
+G93S  [acc == -]
+A98S      [acc += 1]
+E82S    [acc == -]
+T0S              [acc = 0, nextSmal]
+A102S      [acc = smalNum]
+S98S      [acc -= 1]
+T102S      [smalNum = acc, acc = 0]
+E67S     [acc == +]
+T0S              [acc = 0, nextElement]
+A100S        [acc = count]
+A98S      [acc += 1]
+T100S        [count = acc]
+E69S [acc == +]
+P0L          [val one = 1]
+P0L          [var one = 1]
+P0S          [var count = 0]
+P0S          [var answer = 0]
+P0S          [var smalNum = 0]
+P0S          [var numCheck = 0]
+A0S          [fun 1]
+P1L             [size ;3]
+P54S [listStart]
+P0S             [var index]
+[array] P3S [first]   [2*3 + 0 = 6]
+        P5S [second]  [2*3 + 1 = 7]
+        P4S [third]   [2*3 + 0 = 8]
+  [End]

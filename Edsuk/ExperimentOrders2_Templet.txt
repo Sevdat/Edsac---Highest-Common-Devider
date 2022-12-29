@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T56K
+GK
+[0] A3F
+[1] X0S
+[2] T68@
+[3] T0S              [acc = 0]
+[4] A[listStart]S    [acc = lineOfFirst]
+[5] T[var index]S    [index = lineOfFirst; acc = 0]
+[6] T0S              [acc = 0; next]
+[7] A[var count]S    [acc = count]
+[8] A[val one]S      [acc += 1]
+[9] S[size]S         [acc = 1 - 3]
+[10] E[mainPart]S     [acc == 0]
+[11] T0S
+[12] A[var index]S    [acc = index]
+[13] A[var count]S    [index += count]
+[14] L0L              [(var index)]
+[15] A[fun 1]S        [A(var index)S]
+[16] T[next line]S    [put fun 1]
+[17] A1S              [result first]
+[18] T[numCheck]S     [numCheck = acc, acc = 0]
+[19] A[var count]S    [count = 0]
+[20] S[val one]S      [count -= 1]
+[21] E[skip]S         [acc == -1]
+[22] T0S              [acc = 0]
+[23] A[numCheck]S     [acc = numCheck]
+[24] T[smalNum]S      [smalNum = acc, acc = 0]
+[25] T0S              [Skip]
+[26] A[var count]S    [count = 0]
+[27] A[val one]S      [count += 1]
+[28] T[var count]S    [count = acc, acc = 0]
+[29] A[smalNum]S      [acc = smalNum]
+[30] S[numCheck]S     [acc -= numCheck]
+[31] G[skip2]S        [acc = +smalNum]
+[32] T0S              [acc = 0]
+[33] A[numCheck]S     [acc = numCheck]
+[34] T[smalNum]S      [smalNum = numCheck]
+[35] T0S              [Skip2]
+[36] E[next]S         [Next]
+[37] T0S              [-----------mainPart, acc = 0-----------]
+[38] T[count]S        [count = acc]
+[39] T0S              [acc = 0; nextElement1]
+[40] A[var count]S    [acc = count]
+[41] A[val one]S      [acc += 1]
+[42] S[size]S         [acc = 1 - 3]
+[43] E[End]S     [acc == 0]
+[44] T0S
+[45] A[var index]S    [acc = index]
+[46] A[var count]S    [index += count]
+[47] L0L              [(var index)]
+[48] A[fun 1]S        [A(var index)S]
+[49] T[next line]S    [put fun 1]
+[50] A1S              [result first]
+[51] U[numCheck]S     [numCheck = acc, acc = 0]
+[52] S[smalNum]S      [acc -= smalNum, substract]
+[53] G[nextSmal]S     [acc == -]
+[54] S[val one]S      [acc -= 1]
+[55] G[nextElement]S  [acc == -]
+[56] A[val one]S      [acc += 1]
+[57] E[substract]S    [acc == -]
+[58] T0S              [acc = 0, nextSmal]
+[59] A[smalNum]S      [acc = smalNum]
+[60] S[val one]S      [acc -= 1]
+[61] T[smalNum]S      [smalNum = acc, acc = 0]
+[62] E[mainPart]S     [acc == +]
+[63] T0S              [acc = 0, nextElement]
+[64] A[count]S        [acc = count]
+[65] A[val one]S      [acc += 1]
+[66] T[count]S        [count = acc]
+[67] E[nextElement1]S [acc == +]
+[68] E0F               [RETURN]
+[69] P0L          [val one = 1]
+[70] A0S          [fun 1]
+GK
+[0] A19@  [listStart;]
+[1] T0F   [memory 0 = listStart]
+[2] A18@  [size;]
+[3] T1F   [memory 1 = size]
+[4] A15@  [count;]
+[5] T2F   [memory 2 = count]
+[6] A16@  [smalNum;]
+[7] T4F   [memory 3 = smalNum]
+[8] A17@  [numCheck;]
+[9] T5F   [memory 4 = numCheck]
+[10] A20F  [index;]
+[11] T6F   [memory 5 = index]
+[12] A12@
+[13] G56F
+[14] Z0F
+[15] P0S          [var count = 0]
+[16] P0S          [var smalNum = 0]
+[17] P0S          [var numCheck = 0]
+[18] P1L             [size ;3]
+[19] P[first]S [listStart]
+[20] P0S             [var index]
+[21][array] P3S [first]   [2*3 + 0 = 6]
+[22]       P3L [second]  [2*3 + 1 = 7]
+[23]        P4S [third]   [2*3 + 0 = 8]
+EZPF

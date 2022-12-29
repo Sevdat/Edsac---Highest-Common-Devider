@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T[End]S
+X0S
+T0S              [acc = 0]
+A[listStart]S    [acc = lineOfFirst]
+T[var index]S    [index = lineOfFirst; acc = 0]
+
+T0S              [acc = 0; next]
+A[var count]S    [acc = count]
+A[val one]S      [acc += 1]
+S[size]S         [acc = 1 - 3]
+E[mainPart]S     [acc == 0]
+T0S
+A[var index]S    [acc = index]
+A[var count]S    [index += count]
+L0L              [(var index)]
+A[fun 1]S        [A(var index)S]
+T[next line]S    [put fun 1]
+A1S              [result first]
+T[numCheck]S     [numCheck = acc, acc = 0]
+
+A[var count]S    [count = 0]
+S[val one]S      [count -= 1]
+
+E[skip]S         [acc == -1]
+T0S              [acc = 0]
+A[numCheck]S     [acc = numCheck]
+T[smalNum]S      [smalNum = acc, acc = 0]
+T0S              [Skip]
+
+A[var count]S    [count = 0]
+A[val one]S      [count += 1]
+T[var count]S    [count = acc, acc = 0]
+
+A[smalNum]S      [acc = smalNum]
+S[numCheck]S     [acc -= numCheck]
+G[skip2]S        [acc = +smalNum]
+T0S              [acc = 0]
+A[numCheck]S     [acc = numCheck]
+T[smalNum]S      [smalNum = numCheck]
+T0S              [Skip2]
+E[next]S         [Next]
+
+T0S              [-----------mainPart, acc = 0-----------]
+T[count]S        [count = acc]
+
+T0S              [acc = 0; nextElement1]
+A[var count]S    [acc = count]
+A[val one]S      [acc += 1]
+S[size]S         [acc = 1 - 3]
+E[End]S     [acc == 0]
+T0S
+A[var index]S    [acc = index]
+A[var count]S    [index += count]
+L0L              [(var index)]
+A[fun 1]S        [A(var index)S]
+T[next line]S    [put fun 1]
+A1S              [result first]
+U[numCheck]S     [numCheck = acc, acc = 0]
+
+S[smalNum]S      [acc -= smalNum, substract]
+G[nextSmal]S     [acc == -]
+S[val one]S      [acc -= 1]
+G[nextElement]S  [acc == -]
+A[val one]S      [acc += 1]
+E[substract]S    [acc == -]
+
+T0S              [acc = 0, nextSmal]
+A[smalNum]S      [acc = smalNum]
+S[val one]S      [acc -= 1]
+T[smalNum]S      [smalNum = acc, acc = 0]
+E[mainPart]S     [acc == +]
+
+T0S              [acc = 0, nextElement]
+A[count]S        [acc = count]
+A[val one]S      [acc += 1]
+T[count]S        [count = acc]
+E[nextElement1]S [acc == +]
+
+
+P0L          [val one = 1]
+P0L          [var one = 1]
+P0S          [var count = 0]
+P0S          [var answer = 0]
+P0S          [var smalNum = 0]
+P0S          [var numCheck = 0]
+A0S          [fun 1]
+P1L             [size ;3]
+P[first]S [listStart]
+P0S             [var index]
+[array] P3S [first]   [2*3 + 0 = 6]
+        P3L [second]  [2*3 + 1 = 7]
+        P4S [third]   [2*3 + 0 = 8]
+  [End]
